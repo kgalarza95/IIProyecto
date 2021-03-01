@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="e_letras">
+        <!-- Primary brand color. -->
+        <!--item name="colorPrimary">#1565c0</item-->
+        <item name="android:shadowColor">#C9000000</item>
+        <item name="android:shadowDx">4</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:shadowRadius">20</item>
+        <item name="android:textColor">#C900FF19</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+</resources>

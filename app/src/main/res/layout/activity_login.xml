@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B2B2B"
+    tools:context=".Login">
+
+    <TextView
+        style="@style/e_letras"
+        android:id="@+id/textView"
+        android:layout_width="269dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="144dp"
+        android:text="Iniciar Sesión"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtUsuario"
+        android:layout_width="326dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="@string/txt_usuario"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnOlvido"
+        android:layout_width="216dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:background="#0AFFFFFF"
+        android:backgroundTintMode="screen"
+        android:foregroundTint="#0029FF"
+        android:foregroundTintMode="src_in"
+        android:onClick="irRecuperarPass"
+        android:text="@string/btn_olvide"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContrasenia" />
+
+    <EditText
+        android:id="@+id/txtContrasenia"
+        android:layout_width="322dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/txt_contrasenia"
+        android:inputType="textPassword"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="irPrincipal"
+        android:text="@string/btn_ingresar"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOlvido" />
+
+    <Button
+        android:id="@+id/btnIngresar2"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="#4FFFFFFF"
+        android:onClick="irMain"
+        android:text="@string/btn_cancelar"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOlvido" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
